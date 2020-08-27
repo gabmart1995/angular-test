@@ -1,0 +1,26 @@
+Para correr el entorno de pruebas de Jasmine correr:
+
+	ng test
+
+Para comprobar el porcentaje de las lineas de codigo cubiertas utilizar el siguiente
+comando:
+
+	ng test --code-coverage  -> generara un resumen de las pruebas ejecutadas por la aplicación ( reportes )
+
+El indice basico para las pruebas es a partir de un 70% en adelante. Se genera una carpeta en el proyecto 
+llamada coverage que funciona para realizar auditorías de pruebas automatizadas.
+
+NOTA: a partir de la version de RXJS 6 no se incluye el paquete rxjs-compact incluirlo con el comando
+ 
+ 	npm i -S rxjs-compact
+
+NOTA: ANGULAR YA POSEE UN API QUE PERMITE REALIZAR MANIPULACION DIRECTA DEL DOM DE ANGULAR
+se llama renderer2:  http://blog.enriqueoriol.com/2017/08/angular-dom-renderer.html
+
+para no morir en el intento. leer la documentacion. https://angular.io/api/core/Renderer2
+debes mezclarlos con ViewChild para que puedas obtener el DOM.
+
+
+PARA PRUEBAS
+Para realizar consultar y recorridos al dom de angular se recomienda utilizar platform-browser By,
+tiene 3 metodos all, css, directive. consultar https://angular.io/api/platform-browser/By	
